@@ -1,0 +1,17 @@
+import React, { useState } from 'react'
+import "./UserSignin.css"
+import axios from 'axios'
+function UserSignin() {
+  
+ 
+  return (
+    <div className='UserSignin'>
+        <div className='Signin-logo'>Signin</div>
+        <input className='Signin-input' type="text" placeholder='Enter E-mail' />
+        <input className='Signin-input'  type="password" placeholder='PassWord' />
+        <input className='btn'  type="button" value="SignIn" />
+    </div>
+  )
+}
+
+export default UserSignin

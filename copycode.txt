@@ -1,0 +1,40 @@
+import React, { useEffect, useState } from 'react';
+import "./UserSignin.css";
+import axios from 'axios';
+import  toast from "react-router-dom"
+import { Link, useNavigate } from 'react-router-dom'
+
+function UserSignin() {
+  const[user, setUser]=useState({
+    email:"",
+    pass:"",
+  })
+  const navigate = useNavigate()
+  useEffect(()=>{},[])
+  const checkUser=()=>{
+    axios.post("",user)
+    .then((res)=>{
+      localStorage.getItem("",);
+      if(res.data.ok){
+        navigate("/home")
+      }
+      else{
+        toast("Invalid User",{style:{color:"darkblue"}})
+      }
+    }).catch((error)=>{
+      console.log("Failed to get token")
+    })
+  }
+  
+ 
+  return (
+    <div className='UserSignin'>
+        <div className='Signin-logo'>Welcome to QT Chat</div>
+        <input className='Signin-input' type="text" onChange={(e)=>{setUser({...user,email:e.target.value})}} value={user.email} placeholder='Enter e-mail' />
+        <input className='Signin-input'  type="password" onChange={(e)=>{setUser({...user,pass:e.target.value})}} value={user.pass} placeholder='PassWord' />
+        <input className='btn' onClick={UserSignin}  type="button" value="SignIn" />
+    </div>
+  )
+}
+
+export default UserSignin

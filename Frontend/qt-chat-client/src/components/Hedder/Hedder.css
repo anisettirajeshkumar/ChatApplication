@@ -1,0 +1,39 @@
+.heddercomp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e2f;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.leftcomp {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.leftcomp .img i,
+.leftcomp .logout i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.leftcomp .img i:hover,
+.leftcomp .logout i:hover {
+    color: #ff6b6b;
+}
+
+.leftcomp .name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.BrandName {
+    font-size: 30px;
+    font-weight: bold;
+    color: #00d8ff;
+}

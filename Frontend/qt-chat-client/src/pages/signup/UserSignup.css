@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-image: url("");
+}
+#signuplogo{
+    padding-bottom: 20px;
+}
+.main-cont{
+    width: 400px;
+    height: 470px;
+    box-shadow: 0 0 5px black;
+    text-align: center;
+    margin: 5px auto;
+    padding-top: 20px;
+    margin-top: 40px;
+    border-radius: 15px;    
+}
+
+.main-cont div{
+    padding-bottom: 15px;
+}
+
+.input{
+    width: 250px;
+    height: 25px;
+    padding-left: 20px;
+    border-style:groove;
+    margin-top: 5px;
+    
+}
+.radio{
+    display: flex;
+    padding: 0px;
+    padding-left: 25%;
+    padding-top: 10px;
+
+}
+#signup-btn{
+    width: 120px;
+    height: 30px;
+    background-color: aliceblue;
+}
+input{
+    width: 95%;
+    height: 50%;
+    border-radius: 7px;
+    
+}
